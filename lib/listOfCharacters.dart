@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:finalproject/sign_in.dart';
 
 class DetailsPage extends StatelessWidget {
   final String imagePath;
@@ -29,7 +30,7 @@ class DetailsPage extends StatelessWidget {
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)),
                     image: DecorationImage(
-                      image: AssetImage(imagePath),
+                      image: NetworkImage(imagePath),
                       fit: BoxFit.cover,
                     ),
                   ),
