@@ -108,7 +108,7 @@ class DetailsPage extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(vertical: 15),
                           color: const Color(0xff1c1447),
                           child: const Text(
-                            'OK',
+                            'Logout',
                             style: TextStyle(
                               color: Colors.white,
                             ),
