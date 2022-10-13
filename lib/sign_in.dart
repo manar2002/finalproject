@@ -1,4 +1,5 @@
 import 'package:finalproject/sign_up.dart';
+import 'characters.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -118,7 +119,13 @@ class SignInState extends State<SignIn> {
                                     RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(50.0),
                                 ))),
-                            onPressed: () {},
+                            onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                    const CharactersPage()),
+                              );},
                             child: const Text(
                               "Sign in",
                               style: TextStyle(
